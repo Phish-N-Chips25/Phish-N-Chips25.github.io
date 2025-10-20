@@ -3,6 +3,7 @@ import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+import TeamLogo from "../images/logo.jpg";
 ---
 
 <!doctype html>
@@ -12,8 +13,16 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
     </head>
     <body>
         <Header />
-        <main>
-            <h1>🛡️ Team 10 - MEIA ISEP</h1>
+        <main class="homepage">
+            <img
+                class="homepage__logo"
+                src={TeamLogo.src}
+                width="120"
+                height="120"
+                alt="Team 10 shield logo"
+                loading="eager"
+            />
+            <h1 class="homepage__title">🛡️ Team 10 - MEIA ISEP</h1>
             <p>
                 Welcome to the website of <strong>Team 10</strong> from the Master's in Artificial Intelligence Engineering at ISEP.
                 Our application area is <strong>Cybersecurity</strong> and we use this space to document our academic work.

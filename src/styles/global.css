@@ -49,6 +49,30 @@ main {
   margin: auto;
   padding: 3em 1em;
 }
+
+main.homepage {
+  display: grid;
+  gap: 1.5rem;
+  justify-items: start;
+}
+
+main.homepage h1 {
+  margin: 0;
+}
+
+.homepage__title {
+  font-size: 2.5rem;
+  /* text-align: center; */
+  color: rgb(var(--black));
+}
+.homepage__logo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--box-shadow);
+  justify-self: center;
+}
 h1,
 h2,
 h3,
@@ -133,6 +157,10 @@ hr {
   }
   main {
     padding: 1em;
+  }
+  .homepage__logo {
+    width: 96px;
+    height: 96px;
   }
 }
 
