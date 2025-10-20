@@ -62,7 +62,7 @@ main.homepage h1 {
 
 .homepage__title {
   font-size: 2.5rem;
-  text-align: center;
+  /* text-align: center; */
   color: rgb(var(--black));
 }
 .homepage__logo {
