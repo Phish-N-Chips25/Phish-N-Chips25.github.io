@@ -8,6 +8,7 @@ heroImage: "../../images/blog/defined-work-topic.svg"
 We’re launching our Master’s in AI team project blog to document our progress. We picked [**Astro**](https://astro.build/) to keep writing fast and the site fast, while leaving room for small changes in theme and functionality.
 
 Our team’s cybersecurity theme was split across two candidate directions:
+
 1. An **expert system for phishing-URL detection** that inspects both the URL and its landing page for suspicious behavior;
 
 2. A **network intrusion detection/prevention system** focused on monitoring traffic, alerting on anomalies, and safely blocking attacks (e.g., DDoS or MitM attacks).
