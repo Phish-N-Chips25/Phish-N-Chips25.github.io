@@ -1,7 +1,9 @@
 ---
-title: "First Meeting with the Cybersecurity Expert: Key Insights on Phishing Detection"
+title: "Week 2:First Meeting with the Cybersecurity Expert: Key Insights on Phishing Detection"
 description: "Documenting the meeting with our cybersecurity expert, Daniel Marques, and the key insights we gathered to guide our project."
+category: "Challenge 1"
 pubDate: '2025-10-03'
+heroImage: "../../images/blog/expert-meeting.svg"
 ---
 
 On **2 October 2025**, we held our first working session with **David Marques**, cybersecurity expert at Grupo Nabeiro, to discuss the foundations of our academic project on **phishing detection through URL analysis**.

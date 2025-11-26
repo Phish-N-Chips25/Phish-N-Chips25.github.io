@@ -1,7 +1,9 @@
 ---
-title: 'Project Organization with GitHub and Astro'
+title: 'Week 1: Project Organization with GitHub and Astro'
 description: 'In this article, we explain how we structured collaboration for the Master’s in Artificial Intelligence Engineering at ISEP. We detail the chosen tools (GitHub, Astro, and GitHub Pages) and show how they support an asynchronous, collaborative workflow that can grow with our Cybersecurity project.'
-pubDate: 'Sept 20 2025'
+category: "Challenge 1"
+pubDate: '2025-09-22'
+heroImage: "../../images/blog/organizacao-do-projeto-com-github-e-astro.svg"
 ---
 
 ## Team Collaboration and Documentation Structure: GitHub + Astro

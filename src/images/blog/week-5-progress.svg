@@ -1,0 +1,22 @@
+<svg width="1440" height="720" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-week5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0d1b2a" />
+      <stop offset="100%" stop-color="#ef4444" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="720" fill="url(#grad-week5)" rx="48" />
+  <text x="120" y="240" font-family="'Segoe UI', sans-serif" font-size="60" font-weight="700" fill="#fee2e2">
+    Week 5 · Report & Pitch
+  </text>
+  <text x="120" y="310" font-family="'Segoe UI', sans-serif" font-size="34" fill="#ffe4e6">
+    Relatório prévio + 5 min pitch
+  </text>
+  <rect x="120" y="360" width="520" height="220" rx="28" fill="rgba(15,23,42,0.65)" stroke="#fb7185" />
+  <text x="150" y="420" font-family="'Fira Code', monospace" font-size="28" fill="#fecdd3">
+    doc.sections = [context, scope, findings];
+  </text>
+  <text x="150" y="470" font-family="'Fira Code', monospace" font-size="28" fill="#fecdd3">
+    pitch.timer := 5 * 60s;
+  </text>
+</svg>

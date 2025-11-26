@@ -1,0 +1,23 @@
+<svg width="1440" height="720" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-org" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#020617" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="720" fill="url(#grad-org)" rx="48" />
+  <text x="120" y="260" font-family="'Segoe UI', sans-serif" font-size="60" font-weight="700" fill="#f8fafc">
+    Organizing the Project
+  </text>
+  <text x="120" y="330" font-family="'Segoe UI', sans-serif" font-size="36" fill="#ddd6fe">
+    GitHub • Astro • GitHub Pages
+  </text>
+  <rect x="120" y="380" width="480" height="180" rx="24" fill="rgba(15,23,42,0.7)" stroke="#a855f7" />
+  <text x="150" y="430" font-family="'Fira Code', monospace" font-size="26" fill="#e9d5ff">
+    repo := org/Phish-N-Chips25;
+  </text>
+  <text x="150" y="470" font-family="'Fira Code', monospace" font-size="26" fill="#e9d5ff">
+    stack := [Astro, Markdown, Pages];
+  </text>
+</svg>

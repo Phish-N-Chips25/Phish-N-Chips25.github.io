@@ -10,6 +10,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from "../../consts";
 const posts = (await getCollection("blog")).sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
+
+const categoryOptions = Array.from(
+  new Set(posts.map((post) => post.data.category).filter(Boolean))
+).sort();
 ---
 
 <!doctype html>
@@ -19,6 +23,39 @@ const posts = (await getCollection("blog")).sort(
 		<style>
 			main {
 				width: 960px;
+			}
+			.category-filter {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 1rem;
+				margin-bottom: 2rem;
+				padding: 1rem 1.5rem;
+				border: 1px solid #e2e8f0;
+				border-radius: 12px;
+				background-color: #f8fafc;
+			}
+			.category-filter label {
+				font-weight: 600;
+				color: #0f172a;
+			}
+			.category-filter select {
+				padding: 0.4rem 0.75rem;
+				border-radius: 8px;
+				border: 1px solid #cbd5f5;
+				font-size: 1rem;
+			}
+			.category-filter button {
+				padding: 0.45rem 1.2rem;
+				border-radius: 8px;
+				border: none;
+				background-color: #2563eb;
+				color: #fff;
+				font-weight: 600;
+				cursor: pointer;
+			}
+			.category-filter button:hover {
+				background-color: #1d4ed8;
 			}
 			ul {
 				display: flex;
@@ -69,6 +106,14 @@ const posts = (await getCollection("blog")).sort(
 			ul a:hover img {
 				box-shadow: var(--box-shadow);
 			}
+			.empty-state {
+				padding: 2rem;
+				text-align: center;
+				border: 1px dashed #cbd5f5;
+				border-radius: 12px;
+				color: #475569;
+				background-color: #f8fafc;
+			}
 			@media (max-width: 720px) {
 				ul {
 					gap: 0.5em;
@@ -89,26 +134,69 @@ const posts = (await getCollection("blog")).sort(
 	<body>
 		<Header />
 		<main>
+			<form class="category-filter" data-category-form>
+				<label for="category">Filter by challenge</label>
+				<select
+					id="category"
+					name="category"
+					data-category-filter
+				>
+					<option value="all" selected>
+						All challenges
+					</option>
+					{categoryOptions.map((category) => (
+						<option value={category}>
+							{category}
+						</option>
+					))}
+				</select>
+			</form>
 			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
+				<p class="empty-state" data-empty-state hidden>
+					No posts available for this category yet.
+				</p>
+				<ul data-blog-list>
+					{posts.map((post) => (
+						<li data-blog-item data-category={post.data.category ?? "Uncategorized"}>
+							<a href={`/blog/${post.id}/`}>
+								{post.data.heroImage && (
+									<Image width={720} height={360} src={post.data.heroImage} alt="" />
+								)}
+								<h4 class="title">{post.data.title}</h4>
+								<p class="date">
+									<FormattedDate date={post.data.pubDate} />
+								</p>
+							</a>
+						</li>
+					))}
 				</ul>
 			</section>
 		</main>
 		<Footer />
+		<script type="module">
+			document.addEventListener("DOMContentLoaded", () => {
+				const select = document.querySelector('[data-category-filter]');
+				const items = document.querySelectorAll('[data-blog-item]');
+				const emptyState = document.querySelector('[data-empty-state]');
+				if (!select || !items.length) return;
+
+				const updateVisibility = (category) => {
+					let visibleCount = 0;
+					items.forEach((item) => {
+						const itemCategory = item.getAttribute('data-category') ?? "Uncategorized";
+						const shouldShow = category === "all" || itemCategory === category;
+						item.style.display = shouldShow ? "" : "none";
+						if (shouldShow) visibleCount += 1;
+					});
+					if (emptyState) emptyState.hidden = visibleCount !== 0;
+				};
+
+				select.addEventListener("change", () => {
+					updateVisibility(select.value);
+				});
+
+				updateVisibility(select.value);
+			});
+		</script>
 	</body>
 </html>

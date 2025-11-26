@@ -1,0 +1,21 @@
+<svg width="1440" height="720" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-week4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#14b8a6" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="720" fill="url(#grad-week4)" rx="48" />
+  <text x="120" y="250" font-family="'Segoe UI', sans-serif" font-size="58" font-weight="700" fill="#ccfbf1">
+    Week 4 Progress
+  </text>
+  <text x="120" y="320" font-family="'Segoe UI', sans-serif" font-size="34" fill="#e0f2f1">
+    Building the knowledge base
+  </text>
+  <text x="120" y="400" font-family="'Fira Code', monospace" font-size="28" fill="#ecfeff">
+    deliverables := { "SOTA", "prelim report" };
+  </text>
+  <text x="120" y="450" font-family="'Fira Code', monospace" font-size="28" fill="#ecfeff">
+    focus := research.sync();
+  </text>
+</svg>

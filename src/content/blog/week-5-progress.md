@@ -1,8 +1,9 @@
 ---
 title: "Week 5: Preliminary Knowledge Report and Project Pitch"
 description: "Submitting our preliminary knowledge report and presenting our project objectives to the class - A milestone in our MEIA journey"
+category: "Challenge 1"
 pubDate: 2025-10-15
-heroImage: ""
+heroImage: "../../images/blog/week-5-progress.svg"
 ---
 
 ## Week 5 Overview
