@@ -34,7 +34,7 @@ During the Monday session we walked classmates and faculty through the live stac
 
 The pitch focused on storytelling and differentiation:
 
-- Broke the ice with “Good afternoon sharks, we’re here seeking 100K for 10% of our company” before jumping into the presentadion, which immediately lightened the room.
+- Broke the ice with “Good afternoon sharks, we’re here seeking 100K for 10% of our company” before jumping into the presentation, which immediately lightened the room.
 - Structured the narrative around user pain (unsafe links), our dual-engine approach, and the transparency benefits of rule-based AI.
 - Highlighted interoperability: the same backend serves the web app, extension, and future third-party integrations.
 - Closed with the ENGCIA challenge submission status and roadmap for post-challenge enhancements.
