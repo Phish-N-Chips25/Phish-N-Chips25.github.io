@@ -1,9 +1,10 @@
 ---
 title: 'Kickoff: Choosing Our Cybersecurity Project'
 description: 'Why this blog runs on Astro and the two cybersecurity themes we evaluated for our team project'
-pubDate: 'Sep 23 2025'
+category: "Challenge 1"
+pubDate: '2025-09-20'
+heroImage: "../../images/blog/defined-work-topic.svg"
 ---
-
 We’re launching our Master’s in AI team project blog to document our progress. We picked [**Astro**](https://astro.build/) to keep writing fast and the site fast, while leaving room for small changes in theme and functionality.
 
 Our team’s cybersecurity theme was split across two candidate directions:

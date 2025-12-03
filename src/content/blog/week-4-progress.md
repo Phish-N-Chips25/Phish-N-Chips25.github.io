@@ -1,7 +1,9 @@
 ---
-title: "Building Our Cybersecurity Knowledge Base"
+title: "Week 4: Building Our Cybersecurity Knowledge Base"
 description: "Progress update on coordinating the state-of-the-art research and preparing our upcoming deliverables for the ISEP MEIA project."
+category: "Challenge 1"
 pubDate: '2025-10-11'
+heroImage: "../../images/blog/week-4-progress.svg"
 ---
 
 ## Aligning on research priorities

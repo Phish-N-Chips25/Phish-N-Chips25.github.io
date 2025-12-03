@@ -1,0 +1,21 @@
+<svg width="1440" height="720" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-week8" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#f97316" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="720" fill="url(#grad-week8)" rx="48" />
+  <text x="120" y="240" font-family="'Segoe UI', sans-serif" font-size="58" font-weight="700" fill="#fff7ed">
+    Week 8 · Demo Day
+  </text>
+  <text x="120" y="300" font-family="'Segoe UI', sans-serif" font-size="34" fill="#ffedd5">
+    Presentations, submissions, pitch
+  </text>
+  <text x="120" y="380" font-family="'Fira Code', monospace" font-size="28" fill="#fff7ed">
+    pitch.opening := "Good afternoon sharks";
+  </text>
+  <text x="120" y="430" font-family="'Fira Code', monospace" font-size="28" fill="#fff7ed">
+    bundles := [ZIP, PDF, video];
+  </text>
+</svg>

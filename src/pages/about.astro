@@ -2,6 +2,86 @@
 import BaseHead from "../components/BaseHead.astro";
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
+import TeamLogo from "../images/logo.jpg";
+import ArsenioPhoto from "../images/team/arsenio.png";
+import BrunoPhoto from "../images/team/bruno.jpg";
+import CesarPhoto from "../images/team/cesar.jpg";
+import RuiPhoto from "../images/team/rui.jpg";
+
+const challengeColors: Record<string, { bg: string; color: string; shadow: string }> = {
+  "Challenge 1": { bg: "#e0f2fe", color: "#0f172a", shadow: "rgba(59,130,246,0.3)" },
+  "Challenge 2": { bg: "#dcfce7", color: "#0f172a", shadow: "rgba(34,197,94,0.3)" },
+  "Challenge 3": { bg: "#fef9c3", color: "#0f172a", shadow: "rgba(250,204,21,0.35)" },
+  "Challenge 4": { bg: "#fae8ff", color: "#0f172a", shadow: "rgba(217,70,239,0.35)" },
+};
+
+const teamMembers = [
+  {
+    name: "Bruno Camarneiro",
+    email: "1250422@ISEP.IPP.PT",
+    github: {
+      handle: "@bcamarneiro",
+      url: "https://github.com/bcamarneiro",
+    },
+    photo: BrunoPhoto.src,
+    challenges: ["Challenge 1", "Challenge 2"],
+  },
+  {
+    name: "Gustavo Lima",
+    email: "1221349@ISEP.IPP.PT",
+    github: {
+      handle: "@crymE-L",
+      url: "https://github.com/crymE-L",
+    },
+    photo: "https://github.com/crymE-L.png?size=400",
+    challenges: ["Challenge 1"],
+    statusNote: "Participated in Challenge 1 and helped bootstrap the initial scope.",
+  },
+  {
+    name: "Arsénio Ferraz",
+    email: "1010137@ISEP.IPP.PT",
+    github: {
+      handle: "@arsenioferraz-trp",
+      url: "https://github.com/arsenioferraz-trp",
+    },
+    photo: ArsenioPhoto.src,
+    challenges: ["Challenge 1", "Challenge 2"],
+  },
+  {
+    name: "César Vieira",
+    email: "1241523@ISEP.IPP.PT",
+    github: {
+      handle: "@DarkGusta",
+      url: "https://github.com/DarkGusta",
+    },
+    photo: CesarPhoto.src,
+    challenges: ["Challenge 1", "Challenge 2"],
+  },
+  {
+    name: "Rui Soares",
+    email: "1221283@ISEP.IPP.PT",
+    github: {
+      handle: "@ruisoares283",
+      url: "https://github.com/ruisoares283",
+    },
+    photo: RuiPhoto.src,
+    challenges: ["Challenge 1", "Challenge 2"],
+  },
+  {
+    name: "Mário João",
+    email: "1221019@isep.ipp.pt",
+    photo: TeamLogo.src,
+    challenges: ["Challenge 2"],
+    statusNote: "Joined the team in Challenge 2 to reinforce backend automation.",
+  },
+  {
+    name: "Gonçalo Jesus",
+    email: "1220822@isep.ipp.pt",
+    photo: TeamLogo.src,
+    challenges: ["Challenge 2"],
+    statusNote: "Joined the team in Challenge 2 focusing on integration and QA.",
+  },
+];
 ---
 
 <!doctype html>
@@ -23,45 +103,62 @@ import Header from "../components/Header.astro";
             <h2>👨‍💻 Team Members</h2>
             
             <div class="team-members">
-                <div class="team-member">
-                    <h3>Bruno Camarneiro</h3>
-                    <ul>
-                        <li><strong>Email:</strong> <a href="mailto:1250422@ISEP.IPP.PT">1250422@ISEP.IPP.PT</a></li>
-                        <li><strong>GitHub:</strong> <a href="https://github.com/bcamarneiro" target="_blank">@bcamarneiro</a></li>
-                    </ul>
-                </div>
-
-                <div class="team-member">
-                    <h3>Gustavo Lima</h3>
-                    <ul>
-                        <li><strong>Email:</strong> <a href="mailto:1221349@ISEP.IPP.PT">1221349@ISEP.IPP.PT</a></li>
-                        <li><strong>GitHub:</strong> <a href="https://github.com/crymE-L" target="_blank">@crymE-L</a></li>
-                    </ul>
-                </div>
-
-                <div class="team-member">
-                    <h3>Arsénio Ferraz</h3>
-                    <ul>
-                        <li><strong>Email:</strong> <a href="mailto:1010137@ISEP.IPP.PT">1010137@ISEP.IPP.PT</a></li>
-                        <li><strong>GitHub:</strong> <a href="https://github.com/arsenioferraz-trp" target="_blank">@arsenioferraz-trp</a></li>
-                    </ul>
-                </div>
-
-                <div class="team-member">
-                    <h3>César Vieira</h3>
-                    <ul>
-                        <li><strong>Email:</strong> <a href="mailto:1241523@ISEP.IPP.PT">1241523@ISEP.IPP.PT</a></li>
-                        <li><strong>GitHub:</strong> <a href="https://github.com/DarkGusta" target="_blank">@DarkGusta</a></li>
-                    </ul>
-                </div>
-
-                <div class="team-member">
-                    <h3>Rui Soares</h3>
-                    <ul>
-                        <li><strong>Email:</strong> <a href="mailto:1221283@ISEP.IPP.PT">1221283@ISEP.IPP.PT</a></li>
-                        <li><strong>GitHub:</strong> <a href="https://github.com/ruisoares283" target="_blank">@ruisoares283</a></li>
-                    </ul>
-                </div>
+                {teamMembers.map((member) => (
+                    <div class="team-member">
+                        <img
+                            class="team-member__photo"
+                            src={member.photo}
+                            width="240"
+                            height="240"
+                            loading="lazy"
+                            decoding="async"
+                            alt={`Portrait of ${member.name}`}
+                        />
+                        <h3>{member.name}</h3>
+                        <div class="team-member__challenge-row">
+                            <span class="team-member__challenge-label">Challenge participation</span>
+                            <div class="team-member__challenges" role="list">
+                                {member.challenges.map((challenge) => {
+                                    const palette = challengeColors[challenge] ?? {
+                                        bg: "#e2e8f0",
+                                        color: "#0f172a",
+                                        shadow: "rgba(148,163,184,0.45)",
+                                    };
+                                    return (
+                                        <span
+                                            class="challenge-badge"
+                                            role="listitem"
+                                            style={{
+                                                backgroundColor: palette.bg,
+                                                color: palette.color,
+                                                boxShadow: `0 4px 12px ${palette.shadow}`,
+                                            }}
+                                        >
+                                            {challenge}
+                                        </span>
+                                    );
+                                })}
+                            </div>
+                        </div>
+                        <ul>
+                            <li>
+                                <strong>Email:</strong>
+                                <a href={`mailto:${member.email}`}>{member.email}</a>
+                            </li>
+                            {member.github && (
+                                <li>
+                                    <strong>GitHub:</strong>
+                                    <a href={member.github.url} target="_blank">
+                                        {member.github.handle}
+                                    </a>
+                                </li>
+                            )}
+                        </ul>
+                        {member.statusNote && (
+                            <p class="team-member__note">{member.statusNote}</p>
+                        )}
+                    </div>
+                ))}
             </div>
             
             <h2>🤝 Collaboration</h2>
@@ -94,6 +191,55 @@ import Header from "../components/Header.astro";
 		padding: 1.5rem;
 		background-color: #f8fafc;
 	}
+
+        .team-member__photo {
+            width: 100%;
+            max-width: 240px;
+            height: 240px;
+            border-radius: 999px;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 4px solid #e2e8f0;
+        }
+
+        .team-member__challenge-row {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin: 0.75rem 0 1.25rem;
+        }
+
+        .team-member__challenge-label {
+            font-size: 0.95rem;
+            letter-spacing: 0.01em;
+            text-transform: uppercase;
+            color: #475569;
+            padding: 0.2rem 0.65rem;
+            border-radius: 999px;
+            background-color: #e2e8f0;
+            width: fit-content;
+        }
+
+        .team-member__challenges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .challenge-badge {
+            font-weight: 600;
+            padding: 0.35rem 0.9rem;
+            border-radius: 999px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(15, 23, 42, 0.05);
+        }
+
+        .team-member__note {
+            margin-top: 1rem;
+            font-size: 0.95rem;
+            color: #475569;
+        }
 
 	.team-member h3 {
 		margin-top: 0;

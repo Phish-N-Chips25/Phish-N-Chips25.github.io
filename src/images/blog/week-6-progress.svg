@@ -1,0 +1,21 @@
+<svg width="1440" height="720" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-week6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#9333ea" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="720" fill="url(#grad-week6)" rx="48" />
+  <text x="120" y="240" font-family="'Segoe UI', sans-serif" font-size="58" font-weight="700" fill="#f3e8ff">
+    Week 6 · Drools + Prolog
+  </text>
+  <text x="120" y="300" font-family="'Segoe UI', sans-serif" font-size="34" fill="#e9d5ff">
+    Rule engines powering the React UI
+  </text>
+  <text x="120" y="380" font-family="'Fira Code', monospace" font-size="28" fill="#f5f3ff">
+    pipeline := [Prolog => facts, Drools => policy];
+  </text>
+  <text x="120" y="430" font-family="'Fira Code', monospace" font-size="28" fill="#f5f3ff">
+    UrlContext minimal & tested;
+  </text>
+</svg>

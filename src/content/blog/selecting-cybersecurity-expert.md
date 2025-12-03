@@ -1,7 +1,9 @@
 ---
-title: "The Importance of Having a Cybersecurity Expert"
+title: "Week 3: The Importance of Having a Cybersecurity Expert"
 description: "Documenting the selection of Daniel Marques (Grupo Nabeiro) as project expert and the next steps for our first team meeting."
+category: "Challenge 1"
 pubDate: '2025-09-24'
+heroImage: "../../images/blog/selecting-cybersecurity-expert.svg"
 ---
 
 ## Why we need an expert
