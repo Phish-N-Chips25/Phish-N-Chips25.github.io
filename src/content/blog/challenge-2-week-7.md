@@ -26,9 +26,9 @@ With the paper nearly done, we shifted gears to the **Demo Day**. This is our ch
 ### The Pitch
 
 We are crafting a narrative that highlights:
-1.  **The Problem:** The "Patching Paradox"—too many vulnerabilities, too little time.
-2.  **The Solution:** A smart, AI-driven scheduler that prioritizes what matters most.
-3.  **The Impact:** Reduced risk exposure and more efficient use of IT resources.
+1. **The Problem:** The "Patching Paradox"—too many vulnerabilities, too little time.
+2. **The Solution:** A smart, AI-driven scheduler that prioritizes what matters most.
+3. **The Impact:** Reduced risk exposure and more efficient use of IT resources.
 
 ### The Demo
 
