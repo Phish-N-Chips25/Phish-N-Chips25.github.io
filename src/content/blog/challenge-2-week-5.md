@@ -15,15 +15,20 @@ This week culminated in a major milestone: the submission of our scientific pape
 The paper details our complete methodology and findings. Per the guidelines, it includes:
 
 ### 1. Introduction
+
 We provided a strong contextualization of the problem. Vulnerability management is a race against time, and traditional methods often fail to prioritize the most critical threats. We proposed a solution that combines predictive risk scoring with intelligent scheduling.
 
 ### 2. State-of-the-Art
+
 We dedicated significant space (approx. 2 pages) to discussing related work. We compared our approach with existing literature, focusing specifically on:
+
 - **Data Preparation:** How other researchers handle CVE and EPSS data.
 - **ML Model Validation:** The metrics and methods used to validate risk prediction models in cybersecurity.
 
 ### 3. Data Preparation
+
 We described our rigorous data pipeline (approx. 2 pages), including:
+
 - **Exploratory Data Analysis (EDA):** Visualizing the distribution of vulnerabilities and risk scores.
 - **Preprocessing:** The steps we took to clean the data, handle missing values, and encode categorical variables for our ML models.
 

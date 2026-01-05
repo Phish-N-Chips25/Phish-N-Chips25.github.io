@@ -16,7 +16,8 @@ This shift allows us to tackle a critical problem in cybersecurity: the overwhel
 
 Our new objective is to build a system that not only predicts the risk associated with specific vulnerabilities but also optimizes the schedule for applying patches.
 
-### Key Concepts:
+### Key Concepts
+
 - **EPSS (Exploit Prediction Scoring System):** We are leveraging EPSS scores to estimate the probability that a vulnerability will be exploited in the wild.
 - **Genetic Algorithms:** We plan to use evolutionary algorithms to solve the scheduling problem—finding the optimal order to apply patches given constraints like server downtime, team availability, and risk reduction.
 
@@ -24,9 +25,9 @@ Our new objective is to build a system that not only predicts the risk associate
 
 With the change in topic came the need for new datasets. We spent a significant portion of the week scouting for high-quality data sources:
 
-1.  **NVD (National Vulnerability Database):** For core CVE details.
-2.  **EPSS Data:** Historical and current scores to train our risk models.
-3.  **CISA KEV (Known Exploited Vulnerabilities):** To validate our risk predictions against ground truth.
+1. **NVD (National Vulnerability Database):** For core CVE details.
+2. **EPSS Data:** Historical and current scores to train our risk models.
+3. **CISA KEV (Known Exploited Vulnerabilities):** To validate our risk predictions against ground truth.
 
 We are now in the process of cleaning and merging these datasets to create a unified view of vulnerability risk.
 

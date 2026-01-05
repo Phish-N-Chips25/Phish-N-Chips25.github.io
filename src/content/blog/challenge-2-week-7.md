@@ -15,6 +15,7 @@ We have entered the last week before the big finale. The technical work is mostl
 A significant portion of our time this week was dedicated to the final version of our paper, **"Integrating EPSS-Based Vulnerability Risk Prediction with Genetic-Algorithm Scheduling for Enterprise Patch Management"**.
 
 We focused on:
+
 - **Results Section:** Incorporating the final metrics from our optimized models and the scheduling efficiency of our Genetic Algorithm.
 - **Discussion:** Critically analyzing our results, acknowledging limitations, and proposing future work.
 - **Formatting:** Ensuring strict adherence to the submission guidelines and citation styles.
@@ -26,6 +27,7 @@ With the paper nearly done, we shifted gears to the **Demo Day**. This is our ch
 ### The Pitch
 
 We are crafting a narrative that highlights:
+
 1. **The Problem:** The "Patching Paradox"—too many vulnerabilities, too little time.
 2. **The Solution:** A smart, AI-driven scheduler that prioritizes what matters most.
 3. **The Impact:** Reduced risk exposure and more efficient use of IT resources.

@@ -14,7 +14,8 @@ After the Christmas break, we returned with renewed energy to tackle the final s
 
 Our first major milestone of the week was presenting the **Planning** component to Professor Diogo. We showcased our **Genetic Algorithm (GA)** implementation for patch scheduling.
 
-### Key Discussion Points:
+### Key Discussion Points
+
 - **Constraint Handling:** We demonstrated how our GA respects team availability and patch dependencies.
 - **Fitness Function:** We explained how we balance risk reduction (from our ML models) with operational costs.
 - **Feedback:** The feedback was positive, with suggestions to further tune the mutation operators to avoid getting stuck in local optima.
@@ -23,7 +24,8 @@ Our first major milestone of the week was presenting the **Planning** component 
 
 Later in the week, we presented the **Machine Learning** component to Professor Vitorino. We detailed our pipeline for predicting vulnerability risk using EPSS and CVE data.
 
-### Key Discussion Points:
+### Key Discussion Points
+
 - **Model Comparison:** We presented the performance metrics (Accuracy, F1-Score, ROC-AUC) of our LightGBM, XGBoost, Random Forest, and KNN models.
 - **Feature Engineering:** We discussed the impact of the features we engineered from the raw NVD data.
 - **Feedback:** Professor Vitorino emphasized the importance of explainability—understanding *why* a model classifies a vulnerability as high risk.
@@ -31,6 +33,7 @@ Later in the week, we presented the **Machine Learning** component to Professor 
 ## Refinements and Improvements
 
 The rest of the week was dedicated to implementing the feedback received:
+
 - **GA Tuning:** We adjusted the selection pressure and crossover rates in our Genetic Algorithm.
 - **Model Optimization:** We revisited our hyperparameter tuning scripts to squeeze out a bit more performance from our best models.
 - **Integration:** We ensured that the interface between the risk prediction module and the scheduling module is robust and seamless.

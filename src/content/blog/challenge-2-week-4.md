@@ -11,13 +11,16 @@ heroImage: "../../images/blog/challenge-2-week-4.svg"
 This week was dedicated to the "grind"—refining the systems we started last week.
 
 ### Genetic Algorithm Improvements
+
 We focused on the convergence speed of our Genetic Algorithm. By tweaking the mutation rates and experimenting with different selection strategies (e.g., tournament vs. roulette wheel), we are starting to see the algorithm find "good enough" schedules much faster.
 
 We also added more realistic constraints to the problem, such as:
+
 - **Dependency handling:** Ensuring patches that depend on others are scheduled in the correct order.
 - **Resource limits:** Respecting the maximum number of patches a team can apply in a given window.
 
 ### ML Model Tuning
+
 On the prediction side, we continued our work with LightGBM, XGBoost, Random Forest, and KNN.
 
 - **Feature Selection:** We removed noisy features that were confusing the models.

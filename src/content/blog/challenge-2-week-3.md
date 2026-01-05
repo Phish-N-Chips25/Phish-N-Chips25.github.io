@@ -11,6 +11,7 @@ heroImage: "../../images/blog/challenge-2-week-3.svg"
 This week, we moved from theory to code. The core of our solution involves a **Genetic Algorithm (GA)** designed to optimize the patch management schedule.
 
 We started implementing the GA with the following components:
+
 - **Chromosome Representation:** How we encode a potential patch schedule.
 - **Fitness Function:** A metric that balances risk reduction against operational costs (e.g., downtime).
 - **Selection, Crossover, and Mutation:** The evolutionary operators that will help us find better schedules over generations.
@@ -21,10 +22,10 @@ In parallel with the planning module, we began training Machine Learning models 
 
 We experimented with several algorithms to establish a baseline:
 
-1.  **LightGBM:** Known for its speed and efficiency with large datasets.
-2.  **XGBoost:** A powerful gradient boosting library that often performs well on structured data.
-3.  **Random Forest:** A robust ensemble method that helps prevent overfitting.
-4.  **KNN (K-Nearest Neighbors):** A simpler instance-based learning approach for comparison.
+1. **LightGBM:** Known for its speed and efficiency with large datasets.
+2. **XGBoost:** A powerful gradient boosting library that often performs well on structured data.
+3. **Random Forest:** A robust ensemble method that helps prevent overfitting.
+4. **KNN (K-Nearest Neighbors):** A simpler instance-based learning approach for comparison.
 
 ## Early Results
 
