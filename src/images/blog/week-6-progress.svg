@@ -1,11 +1,11 @@
 <svg width="1440" height="720" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad-w6" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="grad-ch1-week6" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020617" />
       <stop offset="100%" stop-color="#14b8a6" />
     </linearGradient>
   </defs>
-  <rect width="1440" height="720" fill="url(#grad-w6)" rx="48" />
+  <rect width="1440" height="720" fill="url(#grad-ch1-week6)" rx="48" />
   <text x="120" y="230" font-family="'Segoe UI', sans-serif" font-size="58" font-weight="700" fill="#ccfbf1">
     Challenge 1 · Week 6
   </text>
@@ -17,6 +17,6 @@
     drools.insert(facts);
   </text>
   <text x="150" y="450" font-family="'Fira Code', monospace" font-size="28" fill="#ccfbf1">
-    prolog.query("phishing_risk(URL, Risk)");
+    prolog.query("risk(URL, X)");
   </text>
 </svg>

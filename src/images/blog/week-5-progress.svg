@@ -1,11 +1,11 @@
 <svg width="1440" height="720" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="grad-w5" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="grad-ch1-week5" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#020617" />
       <stop offset="100%" stop-color="#14b8a6" />
     </linearGradient>
   </defs>
-  <rect width="1440" height="720" fill="url(#grad-w5)" rx="48" />
+  <rect width="1440" height="720" fill="url(#grad-ch1-week5)" rx="48" />
   <text x="120" y="230" font-family="'Segoe UI', sans-serif" font-size="58" font-weight="700" fill="#ccfbf1">
     Challenge 1 · Week 5
   </text>
@@ -14,7 +14,7 @@
   </text>
   <rect x="120" y="340" width="600" height="240" rx="28" fill="rgba(2,6,23,0.7)" stroke="#2dd4bf" />
   <text x="150" y="400" font-family="'Fira Code', monospace" font-size="28" fill="#ccfbf1">
-    report.submit("Preliminary Knowledge");
+    report.submit("Preliminary");
   </text>
   <text x="150" y="450" font-family="'Fira Code', monospace" font-size="28" fill="#ccfbf1">
     pitch.start(duration="5min");
