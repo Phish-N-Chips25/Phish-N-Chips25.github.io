@@ -6,6 +6,8 @@ import TeamLogo from "../images/logo.jpg";
 import ArsenioPhoto from "../images/team/arsenio.png";
 import BrunoPhoto from "../images/team/bruno.jpg";
 import CesarPhoto from "../images/team/cesar.jpg";
+import GoncaloPhoto from "../images/team/goncalo.jpg";
+import MarioPhoto from "../images/team/mario.jpg";
 import RuiPhoto from "../images/team/rui.jpg";
 
 const challengeColors: Record<string, { bg: string; color: string; shadow: string }> = {
@@ -16,27 +18,6 @@ const challengeColors: Record<string, { bg: string; color: string; shadow: strin
 };
 
 const teamMembers = [
-  {
-    name: "Bruno Camarneiro",
-    email: "1250422@ISEP.IPP.PT",
-    github: {
-      handle: "@bcamarneiro",
-      url: "https://github.com/bcamarneiro",
-    },
-    photo: BrunoPhoto.src,
-    challenges: ["Challenge 1"],
-  },
-  {
-    name: "Gustavo Lima",
-    email: "1221349@ISEP.IPP.PT",
-    github: {
-      handle: "@crymE-L",
-      url: "https://github.com/crymE-L",
-    },
-    photo: "https://github.com/crymE-L.png?size=400",
-    challenges: ["Challenge 1"],
-    statusNote: "Participated in Challenge 1 and helped bootstrap the initial scope.",
-  },
   {
     name: "Arsénio Ferraz",
     email: "1010137@ISEP.IPP.PT",
@@ -68,18 +49,39 @@ const teamMembers = [
     challenges: ["Challenge 1", "Challenge 2"],
   },
   {
-    name: "Mário João",
-    email: "1221019@isep.ipp.pt",
-    photo: TeamLogo.src,
+    name: "Gonçalo Jesus",
+    email: "1220822@isep.ipp.pt",
+    photo: GoncaloPhoto.src,
     challenges: ["Challenge 2"],
     statusNote: "",
   },
   {
-    name: "Gonçalo Jesus",
-    email: "1220822@isep.ipp.pt",
-    photo: TeamLogo.src,
+    name: "Mário João",
+    email: "1221019@isep.ipp.pt",
+    photo: MarioPhoto.src,
     challenges: ["Challenge 2"],
     statusNote: "",
+  },
+  {
+    name: "Bruno Camarneiro",
+    email: "1250422@ISEP.IPP.PT",
+    github: {
+      handle: "@bcamarneiro",
+      url: "https://github.com/bcamarneiro",
+    },
+    photo: BrunoPhoto.src,
+    challenges: ["Challenge 1"],
+  },
+  {
+    name: "Gustavo Lima",
+    email: "1221349@ISEP.IPP.PT",
+    github: {
+      handle: "@crymE-L",
+      url: "https://github.com/crymE-L",
+    },
+    photo: "https://github.com/crymE-L.png?size=400",
+    challenges: ["Challenge 1"],
+    statusNote: "Participated in Challenge 1 and helped bootstrap the initial scope.",
   },
 ];
 ---
@@ -102,9 +104,12 @@ const teamMembers = [
 
             <h2>👨‍💻 Team Members</h2>
             
-            <div class="team-members">
+            <div class="team-members" data-team-grid>
                 {teamMembers.map((member) => (
-                    <div class="team-member">
+                    <div 
+                        class="team-member" 
+                        data-member-challenges={JSON.stringify(member.challenges)}
+                    >
                         <img
                             class="team-member__photo"
                             src={member.photo}
@@ -175,10 +180,62 @@ const teamMembers = [
             </p>
         </main>
         <Footer />
+        <script>
+            // Client-side filtering logic
+            const filterSelect = document.getElementById('challenge-filter') as HTMLSelectElement;
+            const teamMembers = document.querySelectorAll('.team-member');
+            
+            if (filterSelect) {
+                filterSelect.addEventListener('change', (e) => {
+                    const selectedChallenge = (e.target as HTMLSelectElement).value;
+                    
+                    teamMembers.forEach((member) => {
+                        const challengesData = member.getAttribute('data-member-challenges');
+                        const memberChallenges = challengesData ? JSON.parse(challengesData) : [];
+                        
+                        if (selectedChallenge === 'all' || memberChallenges.includes(selectedChallenge)) {
+                            (member as HTMLElement).style.display = '';
+                        } else {
+                            (member as HTMLElement).style.display = 'none';
+                        }
+                    });
+                });
+            }
+        </script>
     </body>
 </html>
 
 <style>
+    .filter-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        background-color: #f1f5f9;
+        padding: 1rem 1.5rem;
+        border-radius: 12px;
+        margin-top: 1.5rem;
+        border: 1px solid #e2e8f0;
+    }
+
+    .filter-label {
+        font-weight: 600;
+        color: #334155;
+    }
+
+    .filter-select {
+        padding: 0.5rem 2rem 0.5rem 1rem;
+        border-radius: 6px;
+        border: 1px solid #cbd5e1;
+        background-color: white;
+        font-size: 0.95rem;
+        color: #0f172a;
+        cursor: pointer;
+    }
+
+    .filter-select:hover {
+        border-color: #94a3b8;
+    }
+
 	.team-members {
 		display: grid;
 		gap: 2rem;
