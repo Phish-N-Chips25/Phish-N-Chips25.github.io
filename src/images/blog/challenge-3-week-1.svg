@@ -1,0 +1,21 @@
+<svg width="1440" height="720" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c3w1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="720" fill="url(#grad-c3w1)" rx="48" />
+  <text x="120" y="230" font-family="'Segoe UI', sans-serif" font-size="52" font-weight="700" fill="#e0f2fe">
+    Challenge 3 · Week 1
+  </text>
+  <text x="120" y="295" font-family="'Segoe UI', sans-serif" font-size="34" fill="#bae6fd">
+    Topic Selection — Cybersecurity Vertical
+  </text>
+  <text x="120" y="385" font-family="'Fira Code', monospace" font-size="28" fill="#e0f2fe">
+    topic := "Intrusion Detection for Autonomous Systems";
+  </text>
+  <text x="120" y="435" font-family="'Fira Code', monospace" font-size="28" fill="#e0f2fe">
+    choice := 2;  // from 5 proposals
+  </text>
+</svg>
