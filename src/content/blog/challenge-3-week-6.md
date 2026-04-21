@@ -63,7 +63,7 @@ The original IsolationForest + GRU classical pipeline was replaced with a **full
 
 The resulting chain is:
 
-```
+```text
 Heuristic Scorer (ATT&CK rules + smart features + baseline + KB hybrid)
         → SLM Analyst (Phi-3 Medium)
         → LLM Judge (Llama 3.2)

@@ -48,7 +48,7 @@ A click on “Attribute” triggers the **hybrid RAG** (dense `all-mpnet-base-v2
 
 To close the demo, we showed the **DualSentinel** path running on the same data:
 
-```
+```text
 Heuristic Scorer (ATT&CK rules + smart features + baseline + KB hybrid)
         → SLM Analyst (Phi-3 Medium)
         → LLM Judge (Llama 3.2)

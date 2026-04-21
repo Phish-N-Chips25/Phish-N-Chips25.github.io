@@ -32,7 +32,7 @@ The preliminary submission already covered title, authors, abstract, keywords, i
 
 `frontend/app.py` is now a coherent Flask application that ties the three pillars together:
 
-```
+```text
 Camera → InsightFace → Authentication → SOC Dashboard
                                             │
                               ┌─────────────┴──────────────┐

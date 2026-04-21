@@ -6,7 +6,7 @@ pubDate: 2026-03-08
 heroImage: "../../images/blog/challenge-3-week-2.svg"
 ---
 
-## Welcome, Rynalde!
+## Welcome, Rynalde
 
 On **4 March 2026**, our team received a message that immediately brightened the week:
 
@@ -34,7 +34,7 @@ Beyond the onboarding, this week was primarily a **project definition session**.
 
 Our project will build a **unified cyber-physical surveillance system** composed of two complementary and independently evaluated modules:
 
-**Module 1 — Windows Endpoint Log Anomaly Detection**
+### Module 1 — Windows Endpoint Log Anomaly Detection
 
 Traditional security architectures treat network intrusion detection and physical access control as separate problems. Our first module targets the **digital layer**: detecting suspicious or malicious activity within Windows hosts by analysing telemetry from **Sysmon** and **Event Tracing for Windows (ETW)** — high-fidelity sources recording process creation, network connections, file operations, and registry modifications.
 
@@ -45,7 +45,7 @@ Uniquely, we chose to compare **two fundamentally different detection approaches
 
 The comparison directly addresses a gap in the literature: statistical models score anomalies but provide no semantic insight, while LLMs offer interpretability but risk hallucination in security-critical settings.
 
-**Module 2 — Physical Access Control via Face Recognition**
+### Module 2 — Physical Access Control via Face Recognition
 
 The second module targets the **physical layer**: a camera-based face recognition pipeline for access control. We will compare two paradigms:
 
