@@ -48,6 +48,7 @@ Graph-based approaches (ProGrapher, ORTHRUS) represent host activity as causal g
 The most exciting territory. LLMs can process event sequences as text, produce natural-language descriptions, and directly map behaviour to **MITRE ATT&CK** technique identifiers — something statistical models fundamentally cannot do.
 
 Key models evaluated for our Dual Sentinel pipeline:
+
 - **Phi-3 Mini** (Microsoft, ~4B parameters) — compact SLM designed for efficient local inference on structured reasoning tasks. Will serve as the Analyst.
 - **Llama 3.2** (Meta, ~8B parameters) — balanced size for edge deployment. Will serve as the Judge.
 - Both run locally via **Ollama**, avoiding transmission of sensitive log content to external APIs — a hard requirement in security deployments.
