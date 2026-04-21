@@ -36,6 +36,6 @@ We are crafting a narrative that highlights:
 
 We are also polishing our live demo to ensure it runs smoothly. We want to show the system in action: taking a list of raw vulnerabilities and outputting an optimized, risk-aware patch schedule.
 
-## Ready for the grande Finale
+## Ready for the Grand Finale
 
 The hard work is done. Next stop: **Demo Day**. We are excited to share what we've built and to see the innovative solutions from the other teams.
