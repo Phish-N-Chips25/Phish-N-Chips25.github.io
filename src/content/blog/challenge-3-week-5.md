@@ -21,7 +21,7 @@ The Tuesday session on **24 March** was the last collaborative writing session b
 | Section | Status |
 |---|---|
 | Title | ✓ |
-| Authors (6) | ✓ Arsénio Ferraz, Mário João, César Vieira, Gonçalo Jesus, Rui Soares, Rynalde Silva Serejo |
+| Authors (6) | ✓ Arsénio Ferraz, Mário João, César Vieira, Gonçalo Jesus, Rui Soares, Rynalde Gabriel Silva Serejo |
 | Abstract | ✓ |
 | Keywords | ✓ |
 | Introduction | ✓ |
