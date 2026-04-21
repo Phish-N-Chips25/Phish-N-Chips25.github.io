@@ -9,6 +9,7 @@ import CesarPhoto from "../images/team/cesar.jpg";
 import GoncaloPhoto from "../images/team/goncalo.jpg";
 import MarioPhoto from "../images/team/mario.jpg";
 import RuiPhoto from "../images/team/rui.jpg";
+import RynaldePhoto from "../images/team/rynalde.jpg";
 
 const challengeColors: Record<string, { bg: string; color: string; shadow: string }> = {
   "Challenge 1": { bg: "#e0f2fe", color: "#0f172a", shadow: "rgba(59,130,246,0.3)" },
@@ -22,11 +23,11 @@ const teamMembers = [
     name: "Arsénio Ferraz",
     email: "1010137@ISEP.IPP.PT",
     github: {
-      handle: "@arsenioferraz-trp",
-      url: "https://github.com/arsenioferraz-trp",
+      handle: "@arsenioferrazgit",
+      url: "https://github.com/arsenioferrazgit",
     },
     photo: ArsenioPhoto.src,
-    challenges: ["Challenge 1", "Challenge 2"],
+    challenges: ["Challenge 1", "Challenge 2", "Challenge 3"],
   },
   {
     name: "César Vieira",
@@ -36,7 +37,7 @@ const teamMembers = [
       url: "https://github.com/DarkGusta",
     },
     photo: CesarPhoto.src,
-    challenges: ["Challenge 1", "Challenge 2"],
+    challenges: ["Challenge 1", "Challenge 2", "Challenge 3"],
   },
   {
     name: "Rui Soares",
@@ -46,21 +47,28 @@ const teamMembers = [
       url: "https://github.com/ruisoares283",
     },
     photo: RuiPhoto.src,
-    challenges: ["Challenge 1", "Challenge 2"],
+    challenges: ["Challenge 1", "Challenge 2", "Challenge 3"],
   },
   {
     name: "Gonçalo Jesus",
     email: "1220822@isep.ipp.pt",
+    github: {
+      handle: "@1220822",
+      url: "https://github.com/1220822",
+    },
     photo: GoncaloPhoto.src,
-    challenges: ["Challenge 2"],
+    challenges: ["Challenge 2", "Challenge 3"],
     statusNote: "",
   },
   {
-    name: "Mário João",
-    email: "1221019@isep.ipp.pt",
-    photo: MarioPhoto.src,
-    challenges: ["Challenge 2"],
-    statusNote: "",
+    name: "Rynalde Serejo",
+    email: "1252445@ISEP.IPP.PT",
+    github: {
+      handle: "@rynalde",
+      url: "https://github.com/rynalde",
+    },
+    photo: RynaldePhoto.src,
+    challenges: ["Challenge 3"],
   },
   {
     name: "Bruno Camarneiro",
@@ -71,6 +79,14 @@ const teamMembers = [
     },
     photo: BrunoPhoto.src,
     challenges: ["Challenge 1"],
+  },
+  {
+    name: "Mário João",
+    email: "1221019@isep.ipp.pt",
+    photo: MarioPhoto.src,
+    challenges: ["Challenge 2"],
+    statusNote:
+      "Moved to another Team for Challenge 3 and 4, but contributed to Challenge 2 with data analysis and model evaluation.",
   },
   {
     name: "Gustavo Lima",

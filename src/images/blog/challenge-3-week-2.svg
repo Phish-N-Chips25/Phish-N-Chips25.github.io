@@ -1,0 +1,21 @@
+<svg width="1440" height="720" viewBox="0 0 1440 720" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-c3w2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#22c55e" />
+    </linearGradient>
+  </defs>
+  <rect width="1440" height="720" fill="url(#grad-c3w2)" rx="48" />
+  <text x="120" y="230" font-family="'Segoe UI', sans-serif" font-size="52" font-weight="700" fill="#dcfce7">
+    Challenge 3 · Week 2
+  </text>
+  <text x="120" y="295" font-family="'Segoe UI', sans-serif" font-size="34" fill="#bbf7d0">
+    New Team Member — Welcome, Rynalde!
+  </text>
+  <text x="120" y="385" font-family="'Fira Code', monospace" font-size="28" fill="#dcfce7">
+    team.add({ name: "Rynalde", origin: "Brazil" });
+  </text>
+  <text x="120" y="435" font-family="'Fira Code', monospace" font-size="28" fill="#dcfce7">
+    team.size := 4;  // growing stronger
+  </text>
+</svg>
