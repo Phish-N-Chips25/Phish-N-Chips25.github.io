@@ -57,9 +57,9 @@ Nine subsections cover the full literature foundation:
 
 ## System Architecture Summary
 
-**Module 1 — Log Anomaly Detection**
+### Module 1 — Log Anomaly Detection
 
-```
+```text
 Sysmon/ETW logs
         │
         ▼
@@ -80,9 +80,9 @@ Forest
    Final detection output
 ```
 
-**Module 2 — Face Recognition**
+### Module 2 — Face Recognition
 
-```
+```text
 Webcam frame
       │
   InsightFace RetinaFace (detect + align)
@@ -97,6 +97,7 @@ Webcam frame
 ## Feedback Expected
 
 The professors review structure and content; no grade is assigned. We expect feedback on:
+
 - Narrowing the Related Work to closest prior work.
 - Strengthening the motivation gap in the Introduction.
 - Adding detail to the Experimental Setup (metrics for LLM output quality: explanation quality, evidence grounding rate, hallucination rate).
