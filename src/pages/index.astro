@@ -14,30 +14,54 @@ import TeamLogo from "../images/logo.jpg";
     <body>
         <Header />
         <main class="homepage">
-            <img
-                class="homepage__logo"
-                src={TeamLogo.src}
-                width="120"
-                height="120"
-                alt="Team 10 shield logo"
-                loading="eager"
-            />
-            <h1 class="homepage__title">🛡️ Team 10 - MEIA ISEP</h1>
-            <p>
-                Welcome to the website of <strong>Team 10</strong> from the Master's in Artificial Intelligence Engineering at ISEP.
-                Our application area is <strong>Cybersecurity</strong> and we use this space to document our academic work.
-            </p>
-            
-            <h2>🎯 Our Application Area</h2>
-            <p>
-                <strong>Cybersecurity</strong> - We explore how Artificial Intelligence can be applied to improve digital security.
-            </p>
+            <section class="homepage__hero">
+                <img
+                    class="homepage__logo"
+                    src={TeamLogo.src}
+                    width="84"
+                    height="84"
+                    alt="Team 10 shield logo"
+                    loading="eager"
+                />
+                <div>
+                    <p class="homepage__eyebrow">Team 10 - MEIA ISEP</p>
+                    <h1 class="homepage__title">Cybersecurity research for autonomous physical protection</h1>
+                    <p class="homepage__lead">
+                        We document the development of an AI-assisted surveillance platform that connects endpoint telemetry, identity verification, mobile robotics and multi-agent coordination.
+                    </p>
+                </div>
+            </section>
 
-            <h2>📚 Navigation</h2>
-            <ul>
-                <li><a href="/blog/">Blog</a> - Articles about our progress and methodologies</li>
-                <li><a href="/about/">About</a> - Meet the members of Team 10</li>
-            </ul>
+            <section class="homepage__grid" aria-label="Project focus areas">
+                <article class="homepage__panel">
+                    <p class="eyebrow">Research Focus</p>
+                    <h2>Cyber-physical security</h2>
+                    <p>
+                        Our current challenge studies how digital alerts and physical observations can be correlated inside a single autonomous decision framework.
+                    </p>
+                </article>
+                <article class="homepage__panel">
+                    <p class="eyebrow">Technical Stack</p>
+                    <h2>AI, robotics and agents</h2>
+                    <ul>
+                        <li>ROS 2, Nav2 and Webots</li>
+                        <li>LLM-based cyber analysis</li>
+                        <li>Face recognition and object detection</li>
+                    </ul>
+                </article>
+                <article class="homepage__panel">
+                    <p class="eyebrow">Documentation</p>
+                    <h2>Weekly progress log</h2>
+                    <p>
+                        Each post records decisions, implementation progress, risks and next steps for the academic evaluation.
+                    </p>
+                </article>
+            </section>
+
+            <div class="homepage__actions">
+                <a class="button-link" href="/blog/">Read the blog</a>
+                <a class="button-link secondary" href="/about/">Meet the team</a>
+            </div>
         </main>
         <Footer />
     </body>

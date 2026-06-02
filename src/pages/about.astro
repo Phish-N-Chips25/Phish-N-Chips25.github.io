@@ -27,7 +27,7 @@ const teamMembers = [
       url: "https://github.com/arsenioferrazgit",
     },
     photo: ArsenioPhoto.src,
-    challenges: ["Challenge 1", "Challenge 2", "Challenge 3"],
+    challenges: ["Challenge 1", "Challenge 2", "Challenge 3", "Challenge 4"],
   },
   {
     name: "César Vieira",
@@ -37,7 +37,7 @@ const teamMembers = [
       url: "https://github.com/DarkGusta",
     },
     photo: CesarPhoto.src,
-    challenges: ["Challenge 1", "Challenge 2", "Challenge 3"],
+    challenges: ["Challenge 1", "Challenge 2", "Challenge 3", "Challenge 4"],
   },
   {
     name: "Rui Soares",
@@ -47,7 +47,7 @@ const teamMembers = [
       url: "https://github.com/ruisoares283",
     },
     photo: RuiPhoto.src,
-    challenges: ["Challenge 1", "Challenge 2", "Challenge 3"],
+    challenges: ["Challenge 1", "Challenge 2", "Challenge 3", "Challenge 4"],
   },
   {
     name: "Gonçalo Jesus",
@@ -57,7 +57,7 @@ const teamMembers = [
       url: "https://github.com/1220822",
     },
     photo: GoncaloPhoto.src,
-    challenges: ["Challenge 2", "Challenge 3"],
+    challenges: ["Challenge 2", "Challenge 3", "Challenge 4"],
     statusNote: "",
   },
   {
@@ -68,7 +68,7 @@ const teamMembers = [
       url: "https://github.com/rynalde",
     },
     photo: RynaldePhoto.src,
-    challenges: ["Challenge 3"],
+    challenges: ["Challenge 3", "Challenge 4"],
   },
   {
     name: "Bruno Camarneiro",
@@ -85,6 +85,7 @@ const teamMembers = [
     email: "1221019@isep.ipp.pt",
     photo: MarioPhoto.src,
     challenges: ["Challenge 2"],
+        isInactive: true,
     statusNote:
       "Moved to another Team for Challenge 3 and 4, but contributed to Challenge 2 with data analysis and model evaluation.",
   },
@@ -97,6 +98,7 @@ const teamMembers = [
     },
     photo: "https://github.com/crymE-L.png?size=400",
     challenges: ["Challenge 1"],
+        isInactive: true,
     statusNote: "Participated in Challenge 1 and helped bootstrap the initial scope.",
   },
 ];
@@ -109,7 +111,7 @@ const teamMembers = [
     </head>
     <body>
         <Header />
-        <main>
+        <main class="about-page">
             <h1>👥 About Team 10</h1>
             
             <p>
@@ -123,7 +125,7 @@ const teamMembers = [
             <div class="team-members" data-team-grid>
                 {teamMembers.map((member) => (
                     <div 
-                        class="team-member" 
+                        class:list={["team-member", { "team-member--inactive": member.isInactive }]}
                         data-member-challenges={JSON.stringify(member.challenges)}
                     >
                         <img
@@ -135,7 +137,10 @@ const teamMembers = [
                             decoding="async"
                             alt={`Portrait of ${member.name}`}
                         />
-                        <h3>{member.name}</h3>
+                        <div class="team-member__heading">
+                            <h3>{member.name}</h3>
+                            {member.isInactive && <span class="team-member__status">Former member</span>}
+                        </div>
                         <div class="team-member__challenge-row">
                             <span class="team-member__challenge-label">Challenge participation</span>
                             <div class="team-member__challenges" role="list">
@@ -222,6 +227,10 @@ const teamMembers = [
 </html>
 
 <style>
+    main.about-page {
+        width: 1120px;
+    }
+
     .filter-container {
         display: flex;
         align-items: center;
@@ -264,6 +273,47 @@ const teamMembers = [
 		padding: 1.5rem;
 		background-color: #f8fafc;
 	}
+
+        .team-member--inactive {
+            border-color: #d1d5db;
+            background-color: #f3f4f6;
+            color: #64748b;
+            filter: saturate(0.35);
+        }
+
+        .team-member--inactive .team-member__photo {
+            filter: grayscale(1);
+            opacity: 0.72;
+        }
+
+        .team-member--inactive .challenge-badge {
+            background-color: #e5e7eb !important;
+            color: #64748b !important;
+            box-shadow: none !important;
+        }
+
+        .team-member--inactive a,
+        .team-member--inactive h3,
+        .team-member--inactive .team-member__note {
+            color: #64748b;
+        }
+
+        .team-member__heading {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 0.65rem;
+        }
+
+        .team-member__status {
+            padding: 0.2rem 0.55rem;
+            border: 1px solid #cbd5e1;
+            border-radius: 999px;
+            color: #64748b;
+            background-color: #f8fafc;
+            font-size: 0.78rem;
+            font-weight: 700;
+        }
 
         .team-member__photo {
             width: 100%;
@@ -316,6 +366,7 @@ const teamMembers = [
 
 	.team-member h3 {
 		margin-top: 0;
+        margin-bottom: 0;
 		color: #1e293b;
 	}
 
