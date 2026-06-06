@@ -26,14 +26,18 @@ import HeaderLink from "./HeaderLink.astro";
 </header>
 <style>
 	header {
+		position: sticky;
+		top: 0;
+		z-index: 10;
 		margin: 0;
 		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		border-bottom: 1px solid var(--border);
+		background: rgba(255, 255, 255, 92%);
+		backdrop-filter: blur(14px);
 	}
 	h2 {
 		margin: 0;
-		font-size: 1em;
+		font-size: 0.95em;
 	}
 
 	h2 a,
@@ -44,11 +48,13 @@ import HeaderLink from "./HeaderLink.astro";
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		width: min(1120px, 100%);
+		margin: 0 auto;
 	}
 	nav a {
-		padding: 1em 0.5em;
+		padding: 0.9em 0.5em;
 		color: var(--black);
-		border-bottom: 4px solid transparent;
+		border-bottom: 3px solid transparent;
 		text-decoration: none;
 	}
 	nav a.active {
@@ -59,7 +65,19 @@ import HeaderLink from "./HeaderLink.astro";
 	.social-links a {
 		display: flex;
 	}
+	.internal-links {
+		display: flex;
+		gap: 0.5rem;
+	}
 	@media (max-width: 720px) {
+		nav {
+			align-items: flex-start;
+			flex-direction: column;
+			padding: 0.6rem 0;
+		}
+		nav a {
+			padding: 0.35em 0.5em;
+		}
 		.social-links {
 			display: none;
 		}
