@@ -25,3 +25,6 @@ pnpm-debug.log*
 
 # vscode settings
 .vscode/
+
+# raw media working folder (curated copies live in public/videos and src/images/blog)
+videos and phtos/
