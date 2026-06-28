@@ -3,7 +3,6 @@ title: "Challenge 4 - Week 6: From Navigation Agent to Multi-Agent System"
 description: "This week connected PPO navigation to Webots and ROS 2, and introduced the first SentinelMAS agents for patrol dispatch and threat-driven decisions."
 category: "Challenge 4"
 pubDate: 2026-06-14
-heroImage: "../../images/blog/challenge-4-week-6-1.jpeg"
 ---
 
 ## Week 6 Overview
@@ -17,15 +16,6 @@ The repository was reorganized into three large areas: the cyber-physical securi
 The first Webots office world entered the project during this week. It introduced the simulated workspace, patrol zones, Booster T1 assets and the first ROS 2-oriented structure for controlling the robot.
 
 This mattered because the PPO policy needed a realistic place to operate. A patrol agent is only useful if it can be tested against zones, routes and physical constraints that resemble the final demonstration scenario.
-
-![Webots office world used for the SentinelMAS patrol simulation, showing the patrol zones and desks](../../images/blog/challenge-4-week-6-1.jpeg)
-
-![Sensor detection cone highlighting an object inside the simulated office](../../images/blog/challenge-4-week-6-2.jpeg)
-
-<video controls preload="metadata" width="100%" style="border-radius:8px;">
-  <source src="/videos/challenge-4-week-6-1.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
 
 The robotics work included:
 

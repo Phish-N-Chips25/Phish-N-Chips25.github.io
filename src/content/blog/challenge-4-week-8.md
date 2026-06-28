@@ -3,7 +3,6 @@ title: "Challenge 4 - Week 8: Integrating Face ID, MAS, PPO and Booster T1"
 description: "The final week connected perception, decision-making, PPO navigation, A* planning and the Booster T1 Webots stack into one delivery pipeline."
 category: "Challenge 4"
 pubDate: 2026-06-25
-heroImage: "../../images/blog/challenge-4-week-8-1.jpeg"
 ---
 
 ## Week 8 Overview
@@ -45,13 +44,6 @@ The flow became:
 
 In practice, this means an intruder detection can become a dispatch decision: intruder to threat, threat to auction, auction to robot mission.
 
-![SentinelMAS internal log: movement detection, person identification and patrol dispatch across zones](../../images/blog/challenge-4-week-8-1.jpeg)
-
-<video controls preload="metadata" width="100%" style="border-radius:8px;">
-  <source src="/videos/challenge-4-week-8-1.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
 ## SIMAGIA to Booster T1 Bridge
 
 The Booster T1 integration was also consolidated this week. SIMAGIA writes missions in JSONL, and the robot-side stack reads those missions to execute patrol behavior in Webots.
@@ -83,27 +75,6 @@ The final pipeline can be summarized as:
 | Booster T1 in Webots | Execute and render the patrol in simulation. |
 
 This is the point where the project becomes a complete cyber-physical demonstration instead of a collection of separate prototypes.
-
-![Booster T1 intercepting an unknown person at the checkpoint gate, with the A* planned route and the travelled trajectory](../../images/blog/challenge-4-week-8-2.jpeg)
-
-## Demonstration Videos
-
-The integrated pipeline running end to end in the Webots simulation:
-
-<video controls preload="metadata" width="100%" style="border-radius:8px;">
-  <source src="/videos/challenge-4-week-8-2.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
-<video controls preload="metadata" width="100%" style="border-radius:8px;margin-top:1rem;">
-  <source src="/videos/challenge-4-week-8-3.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-
-<video controls preload="metadata" width="100%" style="border-radius:8px;margin-top:1rem;">
-  <source src="/videos/challenge-4-week-8-4.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
 
 ## Delivery State
 
